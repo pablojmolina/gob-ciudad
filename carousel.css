@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+
+}
+
+#carousel {
+    background-image: url("img/ba1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    height: 80vh;
+    width: 100vw;
+
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.carousel-item::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    bottom: 140px;
+    padding-left: 300px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.carousel-caption h5 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 20px;
+    text-align: right;
+    filter: brightness(1);
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    text-align: right;
+}
+
+.slider-btn {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: -220px;
+}
+
+.slider-btn .btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+.slider-btn .btn-2 {
+    background-color: rgb(109, 177, 6);
+    border-color: rgb(109, 177, 6);
+}
